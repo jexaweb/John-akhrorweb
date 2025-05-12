@@ -96,3 +96,63 @@
     font-size: 1.4rem;
   }
 }
+
+.featured-works {
+  // max-width: 400px;
+  margin: 0 auto;
+}
+
+.featured-works h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+  color: #21243d;
+}
+
+.work-card {
+  display: flex;
+  gap: 8.1rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2rem;
+}
+
+.work-card img {
+  border-radius: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.work-content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 0.8rem;
+  color: #21243d;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.year {
+  background-color: #142850;
+  color: #fff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.category {
+  color: #8695a4;
+  font-size: 1.4rem;
+}
+
+.work-content p {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #212121;
+}
