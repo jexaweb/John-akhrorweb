@@ -4,9 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./stayl.scss" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/stayl.min.css" />
   </head>
   <body>
-    <h1>scss</h1>
+    <header class="header">
+      <nav>
+        <input id="burger-toggle" type="checkbox" />
+        <label for="burger-toggle">
+          <span></span>
+        </label>
+        <ul class="header__list">
+          <li>
+            <a href="/" class="header__link">Works</a>
+          </li>
+          <li>
+            <a href="/" class="header__link">Blog</a>
+          </li>
+          <li>
+            <a href="/" class="header__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="heder--after container">
+        <img
+          class="after--img"
+          src="./img/after.png"
+          alt="after img"
+          width="243"
+          height="243"
+        />
+        <div>
+          <h1 class="after--name">
+            Hi, I am John,<br />
+            Creative Technologist
+          </h1>
+          <p class="after--titl">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            <br />
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam <br />
+            consequat sunt nostrud amet.
+          </p>
+          <a class="btn" href=""> Download Resume</a>
+        </div>
+      </section>
+      <section class="main--cart">
+        <div class="min--cart-er container">
+          <div class="min--er">
+            <a class="min-link" href="">View all</a>
+            <h3 class="article__name">Recent posts</h3>
+          </div>
+          <div class="min--cart-article">
+            <dic class="crt">
+              <h2 class="cart__name">
+                Making a design system from <br />
+                scratch
+              </h2>
+              <h4 class="cart__data">12 Feb 2020 | Design, Pattern</h4>
+              <p class="cart__titl">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p> </dic
+            ><dic class="crt">
+              <h2 class="cart__name">
+                Creating pixel perfect icons in <br />
+                Figma
+              </h2>
+              <h4 class="cart__data">12 Feb 2020 | Figma, Icon Design</h4>
+              <p class="cart__titl">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </dic>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
