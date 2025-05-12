@@ -69,16 +69,23 @@
   }
   .min--cart-article {
     flex-direction: column;
-    margin-top: 10rem;
   }
-  .min-link,
+  a {
+    display: none;
+  }
+
   .article__name {
+    margin-left: 0rem;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
   }
 
   .crt {
     padding: 1.2rem 2.1rem 2.2rem 1.9rem;
     width: 254px;
     height: 266px;
+    margin: 0;
   }
 
   .cart__name {
@@ -86,5 +93,6 @@
   }
   .cart__titl {
     line-height: 100%;
+    font-size: 1.4rem;
   }
 }
