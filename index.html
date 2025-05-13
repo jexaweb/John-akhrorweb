@@ -4,30 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="stylesheet" href="./css/stayl.min.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
-        <input id="burger-toggle" type="checkbox" />
-        <label for="burger-toggle">
-          <span></span>
-        </label>
-        <ul class="header__list">
-          <li>
-            <a href="/" class="header__link">Works</a>
-          </li>
-          <li>
-            <a href="/" class="header__link">Blog</a>
-          </li>
-          <li>
-            <a href="/" class="header__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__container">
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="show-btn" class="header__toggle-btn">
+          <img src="./img/menu.svg" alt="" width="30" height="18" />
+        </button>
+      </div>
+      <div class="header__hidden">
+        <nav class="header__hidden__nav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main class="main-container">
       <section class="heder--after container">
         <img
@@ -89,7 +105,7 @@
         <h2>Featured works</h2>
 
         <!-- Work Card -->
-        <div class="work-card">
+        <!-- <div class="work-card">
           <img
             src="./img/Rectangle 30.png"
             alt="Designing Dashboards"
@@ -150,8 +166,16 @@
               Exercitation veniam consequat sunt nostrud amet.
             </p>
           </div>
-        </div>
+        </div> -->
       </section>
     </main>
+    <script>
+      const showBtn = document.querySelector("#show-btn");
+      const hiddenNav = document.querySelector(".header__hidden");
+      showBtn.addEventListener("click", () => {
+        hiddenNav.classList.toggle("show");
+        document.body.style.overflowY = "hidden";
+      });
+    </script>
   </body>
 </html>

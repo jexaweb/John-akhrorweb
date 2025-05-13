@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-size: 1.6rem;
   font-family: "Heebo", sans-serif;
 }
 h1,
@@ -39,20 +40,15 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1152px;
+  max-width: 1251px; // bu o'zgaruvchan
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .container {
-    width: 100%;
-    max-width: 385px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }

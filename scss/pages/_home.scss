@@ -1,3 +1,61 @@
+.heder--after {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 14rem;
+  gap: 11.5rem;
+}
+.after--img {
+  object-fit: cover;
+  border-radius: 50rem;
+  object-fit: cover;
+}
+.after {
+}
+.after--name {
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 5rem;
+  color: #21243d;
+  margin-bottom: 4rem;
+}
+.after--titl {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #21243d;
+  margin-bottom: 3.8rem;
+}
+
+@media screen and (max-width: 400px) {
+  .heder--after {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .after--img {
+    border-radius: 50rem;
+    width: 174.38px;
+    height: 180px;
+  }
+  .name {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1rem;
+    color: #21243d;
+    text-align: center;
+  }
+  .after--name {
+    text-align: center;
+  }
+  .after--titl {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 100%;
+    color: #21243d;
+    text-align: center;
+  }
+}
 .main--cart {
   display: flex;
   margin-top: 9.4rem;
@@ -152,7 +210,8 @@
 }
 
 .work-content p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 1.6rem;
   color: #212121;
 }
