@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/stayl.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="../index.html">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./work.html">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./blog.html">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="show-btn" class="header__toggle-btn">
+          <img src="../img/menu.svg" alt="" width="30" height="18" />
+        </button>
+      </div>
+      <div class="header__hidden">
+        <nav class="header__hidden__nav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="../index.html">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./work.html">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./blog.html">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-main">
+        <div class="contact--name container">
+          <div class="contact__titl">
+            <h1>
+              Designing Dashboards with <br />
+              usability in mind
+            </h1>
+            <span class="year">2020</span>
+            <span class="category">Dashboard, User Experience Design</span>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia <br />
+              consequat duis enim velit mollit. Exercitation veniam consequat
+              sunt nostrud amet.
+            </p>
+          </div>
+          <img
+            src="../img/Rectangle 4.png"
+            alt="wap ing"
+            width="681"
+            height="460"
+          />
+        </div>
+        <div class="contact--too container">
+          <h1 class="contact__name1">Heading 1</h1>
+          <h3 class="contact__nic">Heading 2</h3>
+          <p class="titl--rv">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia <br />
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt
+            nostrud amet.
+          </p>
+
+          <img
+            src="../img/rectangle 5.png"
+            alt="wap img"
+            width="681"
+            height="460"
+          />
+          <img
+            src="../img/rectangle 6.png"
+            alt="wap img "
+            width="681"
+            height="460"
+          />
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="iconis">
+        <div class="img-logo">
+          <img
+            src="../img/fb.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="../img/insta.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="../img/Group.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="../img/Linkedin.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+        </div>
+        <h4>Copyright ©2020 All rights reserved</h4>
+      </div>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector(".header__toggle-btn");
+      const hiddenMenu = document.querySelector(".header__hidden");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        hiddenMenu.classList.toggle("show");
+        body.classList.toggle("no-scroll");
+      });
+    </script>
+  </body>
+</html>

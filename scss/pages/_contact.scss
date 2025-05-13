@@ -1,0 +1,56 @@
+.main {
+}
+.section-main {
+  margin-top: 7.8rem;
+}
+.contact--name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__titl h1 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  color: #21243d;
+  margin-bottom: 3rem;
+}
+.contact__titl p {
+  margin-top: 2.3rem;
+  margin-bottom: 4.6rem;
+}
+.year {
+  background-color: #ff7c7c;
+}
+
+.contact--too {
+  margin-top: 5.4rem;
+  text-align: center;
+}
+
+.contact__name1 {
+  padding-right: 50rem;
+}
+.contact__nic {
+  padding-right: 55rem;
+}
+.titl--rv {
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+.logos {
+}
+
+@media screen and (max-width: 450px) {
+  .contact--name img {
+    width: 339px;
+    height: 256px;
+  }
+  .contact--too img {
+    width: 339px;
+    height: 256px;
+  }
+}

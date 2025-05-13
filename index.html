@@ -13,13 +13,17 @@
         <nav class="sitenav">
           <ul class="sitenav__list">
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Works</a>
+              <a class="sitenav__link" id="yelov" href="#">Home</a>
             </li>
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Blog</a>
+              <a class="sitenav__link" href="./pages/work.html">Works</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./pages/blog.html">Blog</a>
             </li>
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Contact</a>
+              <a class="sitenav__link" href="./pages/contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -31,13 +35,16 @@
         <nav class="header__hidden__nav">
           <ul class="sitenav__list">
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Works</a>
+              <a class="sitenav__link" id="yelov" href="#">Home</a>
             </li>
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Blog</a>
+              <a class="sitenav__link" href="./pages/work.html">Works</a>
             </li>
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Contact</a>
+              <a class="sitenav__link" href="./pages/blog.html">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./pages/contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -105,7 +112,7 @@
         <h2>Featured works</h2>
 
         <!-- Work Card -->
-        <!-- <div class="work-card">
+        <div class="work-card">
           <img
             src="./img/Rectangle 30.png"
             alt="Designing Dashboards"
@@ -121,7 +128,8 @@
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              Exercitation veniam consequat sunt <br />
+              nostrud amet.
             </p>
           </div>
         </div>
@@ -142,7 +150,8 @@
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              Exercitation veniam consequat sunt <br />
+              nostrud amet.
             </p>
           </div>
         </div>
@@ -163,12 +172,49 @@
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              Exercitation veniam <br />
+              consequat sunt nostrud amet.
             </p>
           </div>
-        </div> -->
+        </div>
       </section>
     </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="iconis">
+        <div class="img-logo">
+          <img
+            src="./img/fb.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="./img/insta.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="./img/Group.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="./img/Linkedin.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+        </div>
+        <h4>Copyright ©2020 All rights reserved</h4>
+      </div>
+    </footer>
     <script>
       const toggleBtn = document.querySelector(".header__toggle-btn");
       const hiddenMenu = document.querySelector(".header__hidden");

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/stayl.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="../index.html">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./work.html">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="./blog.html">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="show-btn" class="header__toggle-btn">
+          <img src="../img/menu.svg" alt="" width="30" height="18" />
+        </button>
+      </div>
+      <div class="header__hidden">
+        <nav class="header__hidden__nav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="../index.html">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./work.html">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="#">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="blog-section container">
+        <h1 class="blog-title">Blog</h1>
+
+        <div class="blog-post">
+          <h2>UI Interactions of the week</h2>
+          <div class="post-meta">
+            <span>12 Feb 2019</span> | <a href="#">Express, Handlebars</a>
+          </div>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+
+        <div class="blog-post">
+          <h2>UI Interactions of the week</h2>
+          <div class="post-meta">
+            <span>12 Feb 2019</span> | <a href="#">Express, Handlebars</a>
+          </div>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+
+        <div class="blog-post">
+          <h2>UI Interactions of the week</h2>
+          <div class="post-meta">
+            <span>12 Feb 2019</span> | <a href="#">Express, Handlebars</a>
+          </div>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="iconis">
+        <div class="img-logo">
+          <img
+            src="../img/fb.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="../img/insta.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="../img/Group.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+          <img
+            src="../img/Linkedin.svg"
+            alt="icons img"
+            class="logo-img"
+            width="30"
+            height="30"
+          />
+        </div>
+        <h4>Copyright ©2020 All rights reserved</h4>
+      </div>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector(".header__toggle-btn");
+      const hiddenMenu = document.querySelector(".header__hidden");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        hiddenMenu.classList.toggle("show");
+        body.classList.toggle("no-scroll");
+      });
+    </script>
+  </body>
+</html>
