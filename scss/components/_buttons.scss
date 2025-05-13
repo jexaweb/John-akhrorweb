@@ -4,6 +4,13 @@
   padding: 1rem 2.1rem 1rem 2rem;
   font-weight: 500;
   font-size: 2rem;
-  line-height: 100%;
+
   border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="header__container container">
         <nav class="sitenav">
           <ul class="sitenav__list">
             <li class="sitenav__item">
@@ -53,7 +53,7 @@
           width="243"
           height="243"
         />
-        <div>
+        <div class="header-btn">
           <h1 class="after--name">
             Hi, I am John,<br />
             Creative Technologist
@@ -170,11 +170,13 @@
       </section>
     </main>
     <script>
-      const showBtn = document.querySelector("#show-btn");
-      const hiddenNav = document.querySelector(".header__hidden");
-      showBtn.addEventListener("click", () => {
-        hiddenNav.classList.toggle("show");
-        document.body.style.overflowY = "hidden";
+      const toggleBtn = document.querySelector(".header__toggle-btn");
+      const hiddenMenu = document.querySelector(".header__hidden");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        hiddenMenu.classList.toggle("show");
+        body.classList.toggle("no-scroll");
       });
     </script>
   </body>

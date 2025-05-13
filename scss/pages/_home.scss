@@ -27,7 +27,7 @@
   margin-bottom: 3.8rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .heder--after {
     flex-direction: column;
     justify-content: center;
@@ -51,9 +51,15 @@
   .after--titl {
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 100%;
+
     color: #21243d;
     text-align: center;
+  }
+  // .main-container {
+  //   overflow-x: hidden;
+  // }
+
+  .header-btn a {
   }
 }
 .main--cart {
@@ -120,7 +126,7 @@
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .main--cart {
     width: 375px;
     height: 647px;
